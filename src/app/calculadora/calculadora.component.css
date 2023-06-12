@@ -1,0 +1,48 @@
+div {
+    --redondeo: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid black;
+    border-radius: var(--redondeo);
+}
+
+input {
+    grid-column: span 4;
+    text-align: right;
+
+    border-radius: var(--redondeo) var(--redondeo) 0 0;
+}
+
+#cero {
+    grid-column: span 2;
+    border-radius: 0 0 0 var(--redondeo);
+}
+
+button:last-of-type {
+    border-radius: 0 0 var(--redondeo) 0;
+}
+
+button, input {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+}
+
+.generales {
+    background-color: gray;
+}
+
+.numeros {
+    background-color: lightgray;
+}
+
+.aritmeticas {
+    background-color: rgb(255, 174, 0);
+}
+
+input {
+    font-size: 2rem;
+    background-color: darkgray;
+}
