@@ -1,13 +1,13 @@
 <div>
-    <button class="numeros">7</button>
-    <button class="numeros">8</button>
-    <button class="numeros">9</button>
-    <button class="numeros">4</button>
-    <button class="numeros">5</button>
-    <button class="numeros">6</button>
-    <button class="numeros">1</button>
-    <button class="numeros">2</button>
-    <button class="numeros">3</button>
-    <button class="numeros" id="cero">0</button>
-    <button class="numeros">,</button>
+    <button (click)="this.nuevoNumero.emit('7')" class="numeros">7</button>
+    <button (click)="this.nuevoNumero.emit('8')" class="numeros">8</button>
+    <button (click)="this.nuevoNumero.emit('9')" class="numeros">9</button>
+    <button (click)="this.nuevoNumero.emit('4')" class="numeros">4</button>
+    <button (click)="this.nuevoNumero.emit('5')" class="numeros">5</button>
+    <button (click)="this.nuevoNumero.emit('6')" class="numeros">6</button>
+    <button (click)="this.nuevoNumero.emit('1')" class="numeros">1</button>
+    <button (click)="this.nuevoNumero.emit('2')" class="numeros">2</button>
+    <button (click)="this.nuevoNumero.emit('3')" class="numeros">3</button>
+    <button (click)="this.nuevoNumero.emit('0')" class="numeros" id="cero">0</button>
+    <button (click)="this.nuevoNumero.emit(',')" class="numeros">,</button>
 </div>

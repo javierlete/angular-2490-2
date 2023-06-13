@@ -8,5 +8,5 @@
     <button (click)="operacion('-')" class="aritmeticas">-</button>
     <button (click)="operacion('+')" class="aritmeticas">+</button>
     <button (click)="operacion('=')" class="aritmeticas">=</button>
-    <app-numeros></app-numeros>
+    <app-numeros (nuevoNumero)="onNumero($event)"></app-numeros>
 </div>
