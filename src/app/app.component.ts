@@ -7,6 +7,8 @@ import { Anuncio } from './anuncios/anuncio';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  eco: string = '0';
+  
   frameworks: Anuncio[] = [
     {
       foto: 'https://picsum.photos/200?1',

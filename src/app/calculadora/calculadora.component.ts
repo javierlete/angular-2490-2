@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculadora',
@@ -6,8 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./calculadora.component.css']
 })
 export class CalculadoraComponent {
-  pantalla: string = '0';
-
+  @Input() pantalla: string = '0';
   @Output() pantallaChange = new EventEmitter<string>();
   
   private n1!: number;

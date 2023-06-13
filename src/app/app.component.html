@@ -1,5 +1,5 @@
 <h1>Componentes</h1>
-<input #eco>
-<app-calculadora (pantallaChange)="eco.value = $event"></app-calculadora>
+<input [(ngModel)]="eco" name="eco" id="eco">
+<app-calculadora [pantalla]="eco" (pantallaChange)="eco = $event"></app-calculadora>
 <app-anuncios [anuncios]="buscadores"></app-anuncios>
 <app-anuncios [anuncios]="frameworks"></app-anuncios>
