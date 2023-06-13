@@ -6,18 +6,6 @@ div {
     border-radius: var(--redondeo);
 }
 
-input {
-    grid-column: span 4;
-    text-align: right;
-
-    border-radius: var(--redondeo) var(--redondeo) 0 0;
-}
-
-#cero {
-    grid-column: span 2;
-    border-radius: 0 0 0 var(--redondeo);
-}
-
 button:last-of-type {
     border-radius: 0 0 var(--redondeo) 0;
 }
@@ -34,15 +22,22 @@ button, input {
     background-color: gray;
 }
 
-.numeros {
-    background-color: lightgray;
-}
-
 .aritmeticas {
     background-color: rgb(255, 174, 0);
 }
 
+app-numeros {
+    grid-row-start: 3;
+    grid-column-end: span 3;
+    grid-row-end: span 4;
+}
+
 input {
+    grid-column: span 4;
+    text-align: right;
+
+    border-radius: var(--redondeo) var(--redondeo) 0 0;
+
     font-size: 2rem;
     background-color: darkgray;
 }
