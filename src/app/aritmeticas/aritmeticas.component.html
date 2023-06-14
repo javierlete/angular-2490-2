@@ -1,7 +1,7 @@
 <div>
-    <button class="aritmeticas">/</button>
-    <button class="aritmeticas">x</button>
-    <button class="aritmeticas">-</button>
-    <button class="aritmeticas">+</button>
-    <button class="aritmeticas">=</button>
+    <button (click)="this.operacionPulsada.emit('/')" class="aritmeticas">/</button>
+    <button (click)="this.operacionPulsada.emit('x')" class="aritmeticas">x</button>
+    <button (click)="this.operacionPulsada.emit('-')" class="aritmeticas">-</button>
+    <button (click)="this.operacionPulsada.emit('+')" class="aritmeticas">+</button>
+    <button (click)="this.operacionPulsada.emit('=')" class="aritmeticas">=</button>
 </div>
