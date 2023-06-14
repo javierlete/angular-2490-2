@@ -16,8 +16,8 @@ button, input {
     padding: 0.5rem;
 }
 
-.generales {
-    background-color: gray;
+app-generales {
+    grid-column-end: span 3;
 }
 
 app-numeros {

@@ -1,0 +1,13 @@
+div {
+    display: flex;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+
+    width: 33.34%;
+}

@@ -7,6 +7,7 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { FormsModule } from '@angular/forms';
 import { NumerosComponent } from './numeros/numeros.component';
 import { AritmeticasComponent } from './aritmeticas/aritmeticas.component';
+import { GeneralesComponent } from './generales/generales.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AritmeticasComponent } from './aritmeticas/aritmeticas.component';
     AnunciosComponent,
     CalculadoraComponent,
     NumerosComponent,
-    AritmeticasComponent
+    AritmeticasComponent,
+    GeneralesComponent
   ],
   imports: [
     BrowserModule,

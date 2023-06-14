@@ -1,8 +1,6 @@
 <div>
     <input value="{{pantalla}}" title="pantalla">
-    <button (click)="onAC()" class="generales">AC</button>
-    <button (click)="onCambiaSigno()" class="generales">+/-</button>
-    <button (click)="onPorcentaje()" class="generales">%</button>
+    <app-generales></app-generales>
     <app-aritmeticas (operacionPulsada)="operacion($event)"></app-aritmeticas>
     <app-numeros (nuevoNumero)="onNumero($event)"></app-numeros>
 </div>
