@@ -1,6 +1,6 @@
 <div>
     <input value="{{pantalla}}" title="pantalla">
-    <app-generales></app-generales>
+    <app-generales (generalPulsado)="onGenerales($event)"></app-generales>
     <app-aritmeticas (operacionPulsada)="operacion($event)"></app-aritmeticas>
     <app-numeros (nuevoNumero)="onNumero($event)"></app-numeros>
 </div>

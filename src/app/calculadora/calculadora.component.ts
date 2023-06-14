@@ -13,19 +13,32 @@ export class CalculadoraComponent {
   private op!: string;
   private n2!: number;
 
-  onAC() {
+  private onAC() {
     this.pantalla = '0';
     this.pantallaChange.emit(this.pantalla);
   }
-  onCambiaSigno() {
+  private onCambiaSigno() {
     this.pantalla = String((-1 * Number(this.pantalla)));
     this.pantallaChange.emit(this.pantalla);
   }
-  onPorcentaje() {
+  private onPorcentaje() {
     this.pantalla = String(Number(this.pantalla) / 100);
     this.pantallaChange.emit(this.pantalla);
   }
 
+  onGenerales(op: string) {
+    switch(op) {
+      case 'AC':
+        this.onAC();
+        break;
+      case '+/-':
+        this.onCambiaSigno();
+        break;
+      case '%':
+        this.onPorcentaje();
+        break;
+    }
+  }
   onNumero(numero: string) {
     this.pantalla += numero;
     this.pantallaChange.emit(this.pantalla);

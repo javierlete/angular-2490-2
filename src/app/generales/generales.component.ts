@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-generales',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./generales.component.css']
 })
 export class GeneralesComponent {
-
+  @Output() generalPulsado = new EventEmitter<string>();
 }
