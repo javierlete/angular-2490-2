@@ -3,10 +3,6 @@
     <button (click)="onAC()" class="generales">AC</button>
     <button (click)="onCambiaSigno()" class="generales">+/-</button>
     <button (click)="onPorcentaje()" class="generales">%</button>
-    <button (click)="operacion('/')" class="aritmeticas">/</button>
-    <button (click)="operacion('x')" class="aritmeticas">x</button>
-    <button (click)="operacion('-')" class="aritmeticas">-</button>
-    <button (click)="operacion('+')" class="aritmeticas">+</button>
-    <button (click)="operacion('=')" class="aritmeticas">=</button>
+    <app-aritmeticas></app-aritmeticas>
     <app-numeros (nuevoNumero)="onNumero($event)"></app-numeros>
 </div>

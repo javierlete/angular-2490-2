@@ -22,14 +22,14 @@ button, input {
     background-color: gray;
 }
 
-.aritmeticas {
-    background-color: rgb(255, 174, 0);
-}
-
 app-numeros {
     grid-row-start: 3;
     grid-column-end: span 3;
     grid-row-end: span 4;
+}
+
+app-aritmeticas {
+    grid-row-end: span 5;
 }
 
 input {

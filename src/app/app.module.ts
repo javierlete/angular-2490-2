@@ -6,13 +6,15 @@ import { AnunciosComponent } from './anuncios/anuncios.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { FormsModule } from '@angular/forms';
 import { NumerosComponent } from './numeros/numeros.component';
+import { AritmeticasComponent } from './aritmeticas/aritmeticas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnunciosComponent,
     CalculadoraComponent,
-    NumerosComponent
+    NumerosComponent,
+    AritmeticasComponent
   ],
   imports: [
     BrowserModule,
