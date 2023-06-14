@@ -1,3 +1,5 @@
+@import '../estilo-botones.css';
+
 div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,8 +11,4 @@ div {
 
 button {
     background-color: lightgray;
-    color: white;
-    border: 1px solid black;
-    font-size: 1.25rem;
-    padding: 0.5rem;
 }
