@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { NumerosComponent } from './numeros/numeros.component';
 import { AritmeticasComponent } from './aritmeticas/aritmeticas.component';
 import { GeneralesComponent } from './generales/generales.component';
+import { ClientesComponent } from './clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GeneralesComponent } from './generales/generales.component';
     CalculadoraComponent,
     NumerosComponent,
     AritmeticasComponent,
-    GeneralesComponent
+    GeneralesComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,
