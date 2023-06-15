@@ -1,3 +1,27 @@
-<ul>
-    <li *ngFor="let cliente of clientes">{{cliente | json}}</li>
-</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>OPCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes">
+            <th>{{cliente.id}}</th>
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.apellido}}</td>
+            <td>
+                <a href="#">Editar</a>
+                <a href="#">Borrar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<form>
+    <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="cliente.nombre">
+    <input type="text" name="apellido" placeholder="Apellido" [(ngModel)]="cliente.apellido">
+    <button (click)="guardar()">Guardar</button>
+</form>

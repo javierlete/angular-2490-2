@@ -10,10 +10,18 @@ import { Cliente } from '../cliente';
 export class ClientesComponent implements OnInit {
   clientes: Cliente[] = [];
   
+  cliente: Cliente = {} as Cliente;
+
   constructor(private clienteService: ClienteService) {}
   
   ngOnInit(): void {
     this.clienteService.obtenerTodos().subscribe(
       clientesRecibidos => this.clientes = clientesRecibidos);
+  }
+
+  guardar() {
+    this.clienteService.insertar(this.cliente).subscribe(
+      clienteRecibido => this.clientes.push(clienteRecibido)
+    )
   }
 }
