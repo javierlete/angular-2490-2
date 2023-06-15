@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Cliente } from './cliente';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClienteService {
-  obtenerTodos(): Cliente[] {
-    return [
+  obtenerTodos(): Observable<Cliente[]> {
+    return of([
       {
         "id": 1,
         "nombre": "Javier",
@@ -17,6 +18,6 @@ export class ClienteService {
         "nombre": "Pepe",
         "apellido": "Pérez"
       }
-    ];
+    ]);
   }
 }
