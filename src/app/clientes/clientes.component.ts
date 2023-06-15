@@ -9,19 +9,44 @@ import { Cliente } from '../cliente';
 })
 export class ClientesComponent implements OnInit {
   clientes: Cliente[] = [];
-  
+
   cliente: Cliente = {} as Cliente;
 
-  constructor(private clienteService: ClienteService) {}
-  
+  constructor(private clienteService: ClienteService) { }
+
   ngOnInit(): void {
+    this.listado();
+  }
+
+  private listado() {
+    this.cliente = {} as Cliente;
+    
     this.clienteService.obtenerTodos().subscribe(
       clientesRecibidos => this.clientes = clientesRecibidos);
   }
 
   guardar() {
-    this.clienteService.insertar(this.cliente).subscribe(
-      clienteRecibido => this.clientes.push(clienteRecibido)
-    )
+    if (this.cliente.id) {
+      this.clienteService.modificar(this.cliente).subscribe(
+        () => this.listado()
+      );
+    } else {
+      this.clienteService.insertar(this.cliente).subscribe(
+        //clienteRecibido => this.clientes.push(clienteRecibido)
+        () => this.listado()
+      )
+    }
+  }
+
+  borrar(id: number) {
+    this.clienteService.borrar(id).subscribe(
+      () => this.listado()
+    );
+  }
+
+  editar(id: number) {
+    this.clienteService.obtenerPorId(id).subscribe(
+      clienteRecibido => this.cliente = clienteRecibido
+    );
   }
 }

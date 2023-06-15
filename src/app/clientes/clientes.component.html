@@ -13,8 +13,8 @@
             <td>{{cliente.nombre}}</td>
             <td>{{cliente.apellido}}</td>
             <td>
-                <a href="#">Editar</a>
-                <a href="#">Borrar</a>
+                <a (click)="editar(cliente.id)" href="#">Editar</a>
+                <a (click)="borrar(cliente.id)" href="#">Borrar</a>
             </td>
         </tr>
     </tbody>
