@@ -1,1 +1,5 @@
-<p>formulario works!</p>
+<form>
+    <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="cliente.nombre">
+    <input type="text" name="apellido" placeholder="Apellido" [(ngModel)]="cliente.apellido">
+    <button (click)="guardar()">Guardar</button>
+</form>
