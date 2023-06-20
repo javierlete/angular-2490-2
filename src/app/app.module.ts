@@ -11,6 +11,9 @@ import { NumerosComponent } from './numeros/numeros.component';
 import { AritmeticasComponent } from './aritmeticas/aritmeticas.component';
 import { GeneralesComponent } from './generales/generales.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ListadoComponent } from './listado/listado.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { ClientesComponent } from './clientes/clientes.component';
     NumerosComponent,
     AritmeticasComponent,
     GeneralesComponent,
-    ClientesComponent
+    ClientesComponent,
+    ListadoComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
