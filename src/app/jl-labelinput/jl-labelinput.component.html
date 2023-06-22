@@ -1,0 +1,7 @@
+<div class="row mb-3">
+    <label for="{{id}}" class="col-sm-2 col-form-label">{{id | titlecase}}</label>
+    <div class="col-sm">
+        <input class="form-control" type="{{tipo}}" id="{{id}}" name="{{id}}" value="{{valor}}" #caja
+            (input)="onValorChange(caja.value)">
+    </div>
+</div>

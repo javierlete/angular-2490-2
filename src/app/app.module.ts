@@ -14,6 +14,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListadoComponent } from './listado/listado.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { JlLabelinputComponent } from './jl-labelinput/jl-labelinput.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     GeneralesComponent,
     ClientesComponent,
     ListadoComponent,
-    FormularioComponent
+    FormularioComponent,
+    JlLabelinputComponent
   ],
   imports: [
     BrowserModule,
